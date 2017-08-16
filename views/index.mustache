@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>test</title>
+  </head>
+  <body>
+    <div class="welcome">
+      <input type="text" name="inputTodo" value="" placeholder="Add a ToDo">
+      <input type="button" name="addBtn" value="Add">
+    </div>
+    <div class="ToDo">
+      <h3>Tasks To Do</h3>
+      <form class="toDoItemsList" action="/" method="post">
+        {{#toDoItems}}
+        <input type="button" name="markAsComplete" value="markAsComplete"
+        {{/toDoItems}}
+      </form>
+    </div>
+    <div class="completed">
+      <h3>Completed Tasks</h3>
+
+
+    </div>
+  </body>
+</html>
